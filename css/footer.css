@@ -35,7 +35,20 @@ footer {
   padding-bottom: 5px;
 }
 
+.footer-menu:hover .footer-menu__icon {
+  animation: 1s icon-floating;
+}
+
 .footer-menu__title {
   font-size: 12px;
   font-weight: bold;
+}
+
+@keyframes icon-floating {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
